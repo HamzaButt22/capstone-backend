@@ -1,4 +1,4 @@
-from fastapi import FastAPI, UploadFile, File
+from fastapi import FastAPI, UploadFile, File, HTTPException
 import shutil
 import os
 from resume_analyzer import analyze_resume
@@ -13,6 +13,9 @@ async def root():
 
 @app.post("/analyze-resume")
 async def web_analyze_resume(file: UploadFile = File(...)):
+    if not file.filename.lower().endswith('.pdf'):
+        raise HTTPException(status_code=400, detail="Invalid file type. Only PDF documents are permitted.")
+
     temp_path = f"temp_{file.filename}"
 
     with open(temp_path, "wb") as buffer:
@@ -34,6 +37,10 @@ async def web_analyze_resume(file: UploadFile = File(...)):
 
 @app.post("/analyze-image")
 async def web_analyze_image(file: UploadFile = File(...)):
+    allowed_extensions = ('.png', '.jpg', '.jpeg')
+    if not file.filename.lower().endswith(allowed_extensions):
+        raise HTTPException(status_code=400, detail="Invalid image type. Only PNG, JPG, or JPEG formats are permitted.")
+
     temp_path = f"temp_{file.filename}"
 
     with open(temp_path, "wb") as buffer:
