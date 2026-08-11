@@ -7,6 +7,7 @@ A high-performance asynchronous web server backend repository built on FastAPI a
    - [Day 1 Code Version](https://github.com/HamzaButt22/capstone-backend/blob/899cbac1a93e9242dc15d65e09d1aa226f9c9728/main.py) — Initialized the asynchronous FastAPI backend environment and local web routing systems.
    - [Day 2 Code Version](https://github.com/HamzaButt22/capstone-backend/blob/87bb7dc7292daede660320345e7e8bf2d602fd13/main.py) — Implemented asynchronous file ingestion multi-part streams and deployed the resume parser endpoint.
    - [Day 3 Code Version](https://github.com/HamzaButt22/capstone-backend/blob/f54987a74c6f50da414980273bbff5e52e3b194d/main.py) — Integrated modular OpenCV algorithms and deployed the asynchronous face-detection image parser endpoint.
+   - [Day 4 Code Version](https://github.com/HamzaButt22/capstone-backend/blob/85ec3060bae9ef15e9d8d45982ea7352200fd9f6/main.py) — Engineered file validation constraint gates and custom HTTP exception handler routes across both endpoints.
 
 ---
 
@@ -44,6 +45,17 @@ A high-performance asynchronous web server backend repository built on FastAPI a
 - Integrated defensive `try/finally` block scopes ensuring the immediate deletion of buffered temporary images on disk.
 - Refactored legacy computer vision print layers to protect modular server initialization pathways.
 
+### Day 4 Milestone
+- Engineered input data validation guard blocks intercepting incorrect client uploads prior to file system execution.
+- Implemented defensive exception handlers mapping structural file properties to standard HTTP status codes.
+- Conducted rigorous edge-case testing passing adversarial payloads through automated swagger panels.
+
+#### Features Built Day 4
+- Integrated native exception handling components utilizing FastAPI tracking classes (`HTTPException`).
+- Built string suffix parsing filters checking low-level file parameters (`file.filename.lower().endswith()`).
+- Configured rigid document type boundaries returning clean `400 Bad Request` states on non-PDF data uploads.
+- Developed structural tuple verification indices checking multi-format image criteria strings (`.png`, `.jpg`, `.jpeg`).
+
 ---
 
 ## ⚙️ How to Run and Test the API Backend
@@ -65,4 +77,4 @@ uvicorn main:app --reload
 By design, backend web endpoints process structured data behind the scenes. To visually test your multi-part upload routes without complex manual scripts, FastAPI generates an interactive schema portal:
 - Open your browser and navigate to the dedicated testing path: **`http://127.0.0`**
 - This loads the **Swagger UI Dashboard**, exposing an explicit blueprint of all active endpoints.
-- Expand the **`POST /analyze-resume`** panel, click **"Try it out"**, attach a valid mock resume PDF, and click **"Execute"** to view live runtime analytical JSON response matrices.
+- **Testing Validation Routing:** Intentionally upload incorrect media attachments across endpoints to confirm the active exception-handling gates safely block execution and return clear `400 Bad Request` status blocks.
