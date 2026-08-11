@@ -2,6 +2,7 @@ from fastapi import FastAPI, UploadFile, File
 import shutil
 import os
 from resume_analyzer import analyze_resume
+from image_analyzer import analyze_image
 
 
 app = FastAPI()
@@ -31,3 +32,22 @@ async def web_analyze_resume(file: UploadFile = File(...)):
         if os.path.exists(temp_path):
             os.remove(temp_path)
 
+@app.post("/analyze-image")
+async def web_analyze_image(file: UploadFile = File(...)):
+    temp_path = f"temp_{file.filename}"
+
+    with open(temp_path, "wb") as buffer:
+        shutil.copyfileobj(file.file, buffer)
+
+    try:
+        result = analyze_image(temp_path)
+
+        return {
+            "filename": file.filename,
+            "status": "Success",
+            "analysis": result
+        }
+
+    finally:
+        if os.path.exists(temp_path):
+            os.remove(temp_path)
