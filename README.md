@@ -9,6 +9,8 @@ A high-performance asynchronous web server backend repository built on FastAPI a
    - [Day 3 Code Version](https://github.com/HamzaButt22/capstone-backend/blob/f54987a74c6f50da414980273bbff5e52e3b194d/main.py) — Integrated modular OpenCV algorithms and deployed the asynchronous face-detection image parser endpoint.
    - [Day 4 Code Version](https://github.com/HamzaButt22/capstone-backend/blob/85ec3060bae9ef15e9d8d45982ea7352200fd9f6/main.py) — Engineered file validation constraint gates and custom HTTP exception handler routes across both endpoints.
    - [Day 5 Code Version](https://github.com/HamzaButt22/capstone-backend) — Finalized comprehensive integration cross-testing via terminal `curl` pipelines and deployed the complete backend architecture.
+- **Week 7**
+   - [Day 1 Code Version](https://github.com/HamzaButt22/capstone-backend/blob/d1372c274c4cb6d776efe0f3c3a0b7d4703c865e/main.py) — Configured the local SQLite relational connection layer and designed table schema parameters.
 
 ---
 
@@ -66,6 +68,21 @@ A high-performance asynchronous web server backend repository built on FastAPI a
 - Verified raw binary multi-part upload pathways over local loopback interfaces using explicit terminal command expressions.
 - Developed standardized API contract schemas mapping out parameters, request signatures, and expected target outputs.
 - Consolidated workspace scripts into clean, decoupled structures to ensure project deployment repeatability.
+
+---
+
+## Week 7 Milestones
+
+### Day 1 Milestone
+- Initialized relational data persistence engines within the capstone backend ecosystem using lightweight, zero-configuration SQLite layouts.
+- Constructed explicit programmatic database connection engines and automated session factories via SQLAlchemy Object-Relational Mappers (ORMs).
+- Designed structured transaction tracking schemas mapping metadata column constraints to uniform alphanumeric data types.
+
+#### Features Built Day 1
+- Initialized local file-system relational database targets (`transactions.db`) using connection strings (`sqlite:///`).
+- Configured isolated memory thread execution parameters (`check_same_thread=False`) to support concurrent asynchronous FastAPI workers.
+- Formulated an entry tracking model table class (`FileTransaction`) inheriting properties from SQLAlchemy’s `declarative_base()` workspace.
+- Integrated automated schema compiling mechanisms (`Base.metadata.create_all()`) to construct physical database table layouts dynamically on server initialization.
 
 ---
 
