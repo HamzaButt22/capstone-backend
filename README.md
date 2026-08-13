@@ -12,6 +12,8 @@ A high-performance asynchronous web server backend repository built on FastAPI a
 - **Week 7**
    - [Day 1 Code Version](https://github.com/HamzaButt22/capstone-backend/blob/d1372c274c4cb6d776efe0f3c3a0b7d4703c865e/main.py) — Configured the local SQLite relational connection layer and designed table schema parameters.
    - [Day 2 Code Version](https://github.com/HamzaButt22/capstone-backend/blob/cf37ab9357322afd5dd50c1626418bab314739c5/main.py) — Implemented Dependency Injection query pipelines to record resume data metrics inside SQL.
+   - [Day 3 Code Version](https://github.com/HamzaButt22/capstone-backend/blob/5e3abc3ddc6d717fe5fe0a5db43f5e10447d63dd/main.py) — Integrated image transaction logger query rules to persist computer vision data inside SQL.
+
 
 ---
 
@@ -94,6 +96,16 @@ A high-performance asynchronous web server backend repository built on FastAPI a
 - Configured FastAPI dependency injection pathways (`Depends(get_db)`) to manage safe runtime database session life-cycles.
 - Engineered string formatting transformers converting parsed multi-item skill arrays into uniform comma-separated database attributes.
 - Implemented automated database record instantiation, staging, and disk-commit actions (`db.add()`, `db.commit()`, `db.refresh()`) on active endpoints.
+
+### Day 3 Milestone
+- Integrated modular custom Computer Vision (CV) matrix metrics into relational database transaction logs.
+- Configured programmatic data retrieval schemas to capture facial tracking boundary calculations at runtime.
+- Conducted full-scale loopback integration testing verifying asynchronous cross-module persistence configurations.
+
+#### Features Built Day 3
+- Connected the `@app.post("/analyze-image")` route directly to SQLite table schemas via dependency injection parameters.
+- Built safe dictionary parameter extractors using `.get()` macros to parse target face detection keys.
+- Deployed robust database mapping instances logging custom verification strings (`Face Detected: True | Count: 1`).
 
 ---
 
