@@ -11,6 +11,7 @@ A high-performance asynchronous web server backend repository built on FastAPI a
    - [Day 5 Code Version](https://github.com/HamzaButt22/capstone-backend) — Finalized comprehensive integration cross-testing via terminal `curl` pipelines and deployed the complete backend architecture.
 - **Week 7**
    - [Day 1 Code Version](https://github.com/HamzaButt22/capstone-backend/blob/d1372c274c4cb6d776efe0f3c3a0b7d4703c865e/main.py) — Configured the local SQLite relational connection layer and designed table schema parameters.
+   - [Day 2 Code Version](https://github.com/HamzaButt22/capstone-backend/blob/cf37ab9357322afd5dd50c1626418bab314739c5/main.py) — Implemented Dependency Injection query pipelines to record resume data metrics inside SQL.
 
 ---
 
@@ -83,6 +84,16 @@ A high-performance asynchronous web server backend repository built on FastAPI a
 - Configured isolated memory thread execution parameters (`check_same_thread=False`) to support concurrent asynchronous FastAPI workers.
 - Formulated an entry tracking model table class (`FileTransaction`) inheriting properties from SQLAlchemy’s `declarative_base()` workspace.
 - Integrated automated schema compiling mechanisms (`Base.metadata.create_all()`) to construct physical database table layouts dynamically on server initialization.
+
+### Day 2 Milestone
+- Implemented high-performance Dependency Injection session handlers to protect connection resources from leaking memory.
+- Wired local log queries inside data analysis endpoints to securely persist transaction metadata on runtime events.
+- Executed end-to-end relational persistence testing passing binary document uploads straight into target database registries.
+
+#### Features Built Day 2
+- Configured FastAPI dependency injection pathways (`Depends(get_db)`) to manage safe runtime database session life-cycles.
+- Engineered string formatting transformers converting parsed multi-item skill arrays into uniform comma-separated database attributes.
+- Implemented automated database record instantiation, staging, and disk-commit actions (`db.add()`, `db.commit()`, `db.refresh()`) on active endpoints.
 
 ---
 
