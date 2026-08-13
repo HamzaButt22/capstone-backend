@@ -14,6 +14,7 @@ A high-performance asynchronous web server backend repository built on FastAPI a
    - [Day 2 Code Version](https://github.com/HamzaButt22/capstone-backend/blob/cf37ab9357322afd5dd50c1626418bab314739c5/main.py) — Implemented Dependency Injection query pipelines to record resume data metrics inside SQL.
    - [Day 3 Code Version](https://github.com/HamzaButt22/capstone-backend/blob/5e3abc3ddc6d717fe5fe0a5db43f5e10447d63dd/main.py) — Integrated image transaction logger query rules to persist computer vision data inside SQL.
    - [Day 4 Code Version](https://github.com/HamzaButt22/capstone-backend/blob/a3fb7237ca30860d61ad30dc3b4af5babd9da7ea/app.py) — Engineered an interactive Streamlit graphical web client dashboard connecting directly to backend routes.
+   - [Day 5 Code Version](https://github.com/HamzaButt22/capstone-backend) — Completed full-stack integration verification and master repository consolidation.
 
 
 
@@ -119,6 +120,11 @@ A high-performance asynchronous web server backend repository built on FastAPI a
 - Implemented file upload buffer pickers (`st.file_uploader`) mapping binary content arrays to explicit multi-part form parameters.
 - Configured dynamic loading notifications (`st.spinner`) and real-time status metric containers (`st.metric`, `st.success`).
 
+### Day 5 Milestone
+- Conducted final end-to-end full-stack loopback integration verification across presentation, application, and storage tiers.
+- Published master documentation records consolidating multi-tier code structures for corporate review.
+- Finalized deployment release metrics across all active tracking branches.
+
 ---
 
 ## 📋 Production API Reference Documentation
@@ -182,10 +188,15 @@ pip install fastapi uvicorn python-multipart spacy pdfplumber opencv-contrib-pyt
 python3 -m spacy download en_core_web_sm
 ```
 
-### 2. Boot Up the Local Server
+### 2. Boot Up the Local Server & Launch the Streamlit Frontend UI
 Launch your Uvicorn application server engine inside your root project folder:
 ```bash
 uvicorn main:app --reload
+```
+
+Open a secondary terminal tab and run:
+```bash
+streamlit run app.py
 ```
 
 ### 3. Accessing the Interactive API Documentation Dashboard
