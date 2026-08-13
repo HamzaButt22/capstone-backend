@@ -75,6 +75,21 @@ async def web_analyze_image(file: UploadFile = File(...), db: Session = Depends(
 
     try:
         result = analyze_image(temp_path)
+        
+        face_detected = result.get("face_detected", False)
+        face_count = result.get("count", 0)
+
+        db_transaction = models.FileTransaction(
+            filename=file.filename,
+            file_type="image",
+            status="Success",
+            result_summary=f"Face Detected: {face_detected} | Count: {face_count}"
+        )
+
+        db.add(db_transaction)
+        db.commit()
+        db.refresh(db_transaction)
+
 
         return {
             "filename": file.filename,
