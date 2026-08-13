@@ -3,9 +3,13 @@ import shutil
 import os
 from resume_analyzer import analyze_resume
 from image_analyzer import analyze_image
+import models
+from database import engine
+
 
 
 app = FastAPI()
+models.Base.metadata.create_all(bind=engine)
 
 @app.get("/")
 async def root():
