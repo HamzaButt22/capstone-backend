@@ -31,7 +31,8 @@ def analyze_resume(pdf_path):
     CATEGORIES = {
         'Data Science': ['python', 'sql', 'machine', 'learning', 'data', 'analytics', 'statistics', 'modeling'],
         'Web Development': ['javascript', 'react', 'html', 'css', 'node', 'frontend', 'backend', 'developer'],
-        'Security Ops': ['security', 'guard', 'safety', 'protecting', 'guarding', 'criminal', 'justice', 'defense']
+        'Security Ops': ['security', 'guard', 'safety', 'protecting', 'guarding', 'criminal', 'justice', 'defense'],
+        'Logistics/Warehouse': ['warehouse', 'shipping', 'picking', 'packing', 'inventory', 'forklift', 'associate']
     }
     
     best_category = "Unknown"

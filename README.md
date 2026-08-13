@@ -13,6 +13,8 @@ A high-performance asynchronous web server backend repository built on FastAPI a
    - [Day 1 Code Version](https://github.com/HamzaButt22/capstone-backend/blob/d1372c274c4cb6d776efe0f3c3a0b7d4703c865e/main.py) — Configured the local SQLite relational connection layer and designed table schema parameters.
    - [Day 2 Code Version](https://github.com/HamzaButt22/capstone-backend/blob/cf37ab9357322afd5dd50c1626418bab314739c5/main.py) — Implemented Dependency Injection query pipelines to record resume data metrics inside SQL.
    - [Day 3 Code Version](https://github.com/HamzaButt22/capstone-backend/blob/5e3abc3ddc6d717fe5fe0a5db43f5e10447d63dd/main.py) — Integrated image transaction logger query rules to persist computer vision data inside SQL.
+   - [Day 4 Code Version](https://github.com/HamzaButt22/capstone-backend/blob/a3fb7237ca30860d61ad30dc3b4af5babd9da7ea/app.py) — Engineered an interactive Streamlit graphical web client dashboard connecting directly to backend routes.
+
 
 
 ---
@@ -106,6 +108,16 @@ A high-performance asynchronous web server backend repository built on FastAPI a
 - Connected the `@app.post("/analyze-image")` route directly to SQLite table schemas via dependency injection parameters.
 - Built safe dictionary parameter extractors using `.get()` macros to parse target face detection keys.
 - Deployed robust database mapping instances logging custom verification strings (`Face Detected: True | Count: 1`).
+
+### Day 4 Milestone
+- Designed a client-server architecture splitting backend processing logic from frontend user interface elements.
+- Integrated the Streamlit framework with the Python `requests` library to manage asynchronous HTTP payloads from browser actions.
+- Conducted full-stack validation testing verifying browser-to-server data routing and real-time visual metric rendering.
+
+#### Features Built Day 4
+- Constructed a two-column multi-widget application layout (`st.columns(2)`) dividing NLP resume operations from OpenCV image trackers.
+- Implemented file upload buffer pickers (`st.file_uploader`) mapping binary content arrays to explicit multi-part form parameters.
+- Configured dynamic loading notifications (`st.spinner`) and real-time status metric containers (`st.metric`, `st.success`).
 
 ---
 
