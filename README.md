@@ -1,216 +1,322 @@
-# capstone-backend
+<div align="center">
 
-A high-performance asynchronous web server backend repository built on FastAPI and Uvicorn, exposing NLP text processing and Computer Vision AI modules as scalable REST API endpoints.
+<img src="./assets/banner.svg" width="100%"/>
 
-## 📅 Project Version History
-- **Week 6**
-   - [Day 1 Code Version](https://github.com/HamzaButt22/capstone-backend/blob/899cbac1a93e9242dc15d65e09d1aa226f9c9728/main.py) — Initialized the asynchronous FastAPI backend environment and local web routing systems.
-   - [Day 2 Code Version](https://github.com/HamzaButt22/capstone-backend/blob/87bb7dc7292daede660320345e7e8bf2d602fd13/main.py) — Implemented asynchronous file ingestion multi-part streams and deployed the resume parser endpoint.
-   - [Day 3 Code Version](https://github.com/HamzaButt22/capstone-backend/blob/f54987a74c6f50da414980273bbff5e52e3b194d/main.py) — Integrated modular OpenCV algorithms and deployed the asynchronous face-detection image parser endpoint.
-   - [Day 4 Code Version](https://github.com/HamzaButt22/capstone-backend/blob/85ec3060bae9ef15e9d8d45982ea7352200fd9f6/main.py) — Engineered file validation constraint gates and custom HTTP exception handler routes across both endpoints.
-   - [Day 5 Code Version](https://github.com/HamzaButt22/capstone-backend) — Finalized comprehensive integration cross-testing via terminal `curl` pipelines and deployed the complete backend architecture.
-- **Week 7**
-   - [Day 1 Code Version](https://github.com/HamzaButt22/capstone-backend/blob/d1372c274c4cb6d776efe0f3c3a0b7d4703c865e/main.py) — Configured the local SQLite relational connection layer and designed table schema parameters.
-   - [Day 2 Code Version](https://github.com/HamzaButt22/capstone-backend/blob/cf37ab9357322afd5dd50c1626418bab314739c5/main.py) — Implemented Dependency Injection query pipelines to record resume data metrics inside SQL.
-   - [Day 3 Code Version](https://github.com/HamzaButt22/capstone-backend/blob/5e3abc3ddc6d717fe5fe0a5db43f5e10447d63dd/main.py) — Integrated image transaction logger query rules to persist computer vision data inside SQL.
-   - [Day 4 Code Version](https://github.com/HamzaButt22/capstone-backend/blob/a3fb7237ca30860d61ad30dc3b4af5babd9da7ea/app.py) — Engineered an interactive Streamlit graphical web client dashboard connecting directly to backend routes.
-   - [Day 5 Code Version](https://github.com/HamzaButt22/capstone-backend) — Completed full-stack integration verification and master repository consolidation.
+<br><br>
 
+<img src="./assets/chips.svg" height="52"/>
 
+</div>
 
----
+## What this is
 
-## Week 6
+The two standalone modules from [`capstone-ai-modules`](https://github.com/HamzaButt22/capstone-ai-modules)
+(resume categorization, face detection) wrapped in a FastAPI backend and driven from a Streamlit
+dashboard — plus a SQLite log of every request either endpoint has handled.
 
-### Day 1 Milestone
-- Initialized local workspace tracking environments for Project #4 (Capstone Backend).
-- Configured local development servers using high-performance asynchronous execution wrappers.
-- Implemented baseline web routing architectures returning structured JSON metadata payloads.
+This is Weeks 6–7 of the same internship as
+[`student-management-system`](https://github.com/HamzaButt22/student-management-system) (Weeks
+1–2), [`eda-data-pipeline`](https://github.com/HamzaButt22/eda-data-pipeline) (Week 3),
+[`classical-ml-comparison`](https://github.com/HamzaButt22/classical-ml-comparison) (Week 4), and
+[`capstone-ai-modules`](https://github.com/HamzaButt22/capstone-ai-modules) (Week 5). Same format
+as all four: every day below is **what I was solving for → what I chose → what I didn't choose,
+and why not.**
 
-#### Features Built Day 1
-- Bootstrapped an active REST API web gateway using Scikit-Learn/FastAPI application objects (`FastAPI()`).
-- Developed a synchronous root-index router mapping (`@app.get("/")`) handling data state responses.
-- Configured a local hot-reloading development server profile via the Uvicorn ASGI application server (`uvicorn main:app --reload`).
+<br>
 
-### Day 2 Milestone
-- Developed an asynchronous web file upload ingestion endpoint to dynamically process unstructured multi-part document streams.
-- Integrated modular custom Natural Language Processing (NLP) functions into core web routing layers.
-- Conducted interactive data pipeline testing utilizing automatic Swagger UI schema frameworks.
+## Run it
 
-#### Features Built Day 2
-- Configured multi-part media upload handlers utilizing FastAPI data parameters (`UploadFile = File(...)`).
-- Engineered local disk write buffers utilizing `shutil.copyfileobj()` to securely stage files for processing.
-- Implemented robust operational safety frameworks using `try/finally` blocks to guarantee immediate temp file cleanup.
-- Refactored core legacy script entries to protect runtime execution environments from layout-aware path failures.
-
-### Day 3 Milestone
-- Integrated modular custom Computer Vision (CV) matrix calculations into asynchronous web routing structures.
-- Developed an image ingestion gateway capable of standardizing multi-channel BGR spatial data streams via web requests.
-- Verified system matrix output states side-by-side using automatic browser documentation interfaces.
-
-#### Features Built Day 3
-- Configured a dedicated media upload route utilizing the FastAPI post decorator (`@app.post("/analyze-image")`).
-- Deployed asynchronous byte-stream file parsers using multi-part data tokens (`UploadFile = File(...)`).
-- Integrated defensive `try/finally` block scopes ensuring the immediate deletion of buffered temporary images on disk.
-- Refactored legacy computer vision print layers to protect modular server initialization pathways.
-
-### Day 4 Milestone
-- Engineered input data validation guard blocks intercepting incorrect client uploads prior to file system execution.
-- Implemented defensive exception handlers mapping structural file properties to standard HTTP status codes.
-- Conducted rigorous edge-case testing passing adversarial payloads through automated swagger panels.
-
-#### Features Built Day 4
-- Integrated native exception handling components utilizing FastAPI tracking classes (`HTTPException`).
-- Built string suffix parsing filters checking low-level file parameters (`file.filename.lower().endswith()`).
-- Configured rigid document type boundaries returning clean `400 Bad Request` states on non-PDF data uploads.
-- Developed structural tuple verification indices checking multi-format image criteria strings (`.png`, `.jpg`, `.jpeg`).
-
-### Day 5 Milestone
-- Conducted exhaustive production integration testing via automated multi-part `curl` terminal operations.
-- Compiled formal API blueprint design document parameters detailing active network methods and data contracts.
-- Consolidated code versions and finalized the project backend workspace delivery.
-
-#### Features Built Day 5
-- Verified raw binary multi-part upload pathways over local loopback interfaces using explicit terminal command expressions.
-- Developed standardized API contract schemas mapping out parameters, request signatures, and expected target outputs.
-- Consolidated workspace scripts into clean, decoupled structures to ensure project deployment repeatability.
-
----
-
-## Week 7 Milestones
-
-### Day 1 Milestone
-- Initialized relational data persistence engines within the capstone backend ecosystem using lightweight, zero-configuration SQLite layouts.
-- Constructed explicit programmatic database connection engines and automated session factories via SQLAlchemy Object-Relational Mappers (ORMs).
-- Designed structured transaction tracking schemas mapping metadata column constraints to uniform alphanumeric data types.
-
-#### Features Built Day 1
-- Initialized local file-system relational database targets (`transactions.db`) using connection strings (`sqlite:///`).
-- Configured isolated memory thread execution parameters (`check_same_thread=False`) to support concurrent asynchronous FastAPI workers.
-- Formulated an entry tracking model table class (`FileTransaction`) inheriting properties from SQLAlchemy’s `declarative_base()` workspace.
-- Integrated automated schema compiling mechanisms (`Base.metadata.create_all()`) to construct physical database table layouts dynamically on server initialization.
-
-### Day 2 Milestone
-- Implemented high-performance Dependency Injection session handlers to protect connection resources from leaking memory.
-- Wired local log queries inside data analysis endpoints to securely persist transaction metadata on runtime events.
-- Executed end-to-end relational persistence testing passing binary document uploads straight into target database registries.
-
-#### Features Built Day 2
-- Configured FastAPI dependency injection pathways (`Depends(get_db)`) to manage safe runtime database session life-cycles.
-- Engineered string formatting transformers converting parsed multi-item skill arrays into uniform comma-separated database attributes.
-- Implemented automated database record instantiation, staging, and disk-commit actions (`db.add()`, `db.commit()`, `db.refresh()`) on active endpoints.
-
-### Day 3 Milestone
-- Integrated modular custom Computer Vision (CV) matrix metrics into relational database transaction logs.
-- Configured programmatic data retrieval schemas to capture facial tracking boundary calculations at runtime.
-- Conducted full-scale loopback integration testing verifying asynchronous cross-module persistence configurations.
-
-#### Features Built Day 3
-- Connected the `@app.post("/analyze-image")` route directly to SQLite table schemas via dependency injection parameters.
-- Built safe dictionary parameter extractors using `.get()` macros to parse target face detection keys.
-- Deployed robust database mapping instances logging custom verification strings (`Face Detected: True | Count: 1`).
-
-### Day 4 Milestone
-- Designed a client-server architecture splitting backend processing logic from frontend user interface elements.
-- Integrated the Streamlit framework with the Python `requests` library to manage asynchronous HTTP payloads from browser actions.
-- Conducted full-stack validation testing verifying browser-to-server data routing and real-time visual metric rendering.
-
-#### Features Built Day 4
-- Constructed a two-column multi-widget application layout (`st.columns(2)`) dividing NLP resume operations from OpenCV image trackers.
-- Implemented file upload buffer pickers (`st.file_uploader`) mapping binary content arrays to explicit multi-part form parameters.
-- Configured dynamic loading notifications (`st.spinner`) and real-time status metric containers (`st.metric`, `st.success`).
-
-### Day 5 Milestone
-- Conducted final end-to-end full-stack loopback integration verification across presentation, application, and storage tiers.
-- Published master documentation records consolidating multi-tier code structures for corporate review.
-- Finalized deployment release metrics across all active tracking branches.
-
----
-
-## 📋 Production API Reference Documentation
-
-### 1. Root Server Status Entry
-- **Endpoint Route:** `GET /`
-- **Expected Success Output (`200 OK`):**
-  ```json
-  {
-    "message": "Hello World",
-    "status": "FastAPI Server Running Securely"
-  }
-  ```
-
-### 2. Natural Language Processing Resume Analyzer
-- **Endpoint Route:** `POST /analyze-resume`
-- **Accepts Content-Type:** `multipart/form-data`
-- **Required Param Fields:** `file: UploadFile` *(Strictly restricted to `.pdf` extensions)*
-- **Expected Success Output (`200 OK`):**
-  ```json
-  {
-    "filename": "resume_1.pdf",
-    "status": "Success",
-    "predicted_category": "Security Ops",
-    "extracted_skills": ["safety", "defense", "security", "guard"]
-  }
-  ```
-- **Expected Error Output (`400 Bad Request`):**
-  ```json
-  { "detail": "Invalid file type. Only PDF documents are permitted." }
-  ```
-
-### 3. Computer Vision Image Face Detection Engine
-- **Endpoint Route:** `POST /analyze-image`
-- **Accepts Content-Type:** `multipart/form-data`
-- **Required Param Fields:** `file: UploadFile` *(PNG, JPG, or JPEG format types)*
-- **Expected Success Output (`200 OK`):**
-  ```json
-  {
-    "filename": "face_sample.jpeg",
-    "status": "Success",
-    "analysis": {
-      "face_detected": true,
-      "count": 1
-    }
-  }
-  ```
-- **Expected Error Output (`400 Bad Request`):**
-  ```json
-  { "detail": "Invalid image type. Only PNG, JPG, or JPEG formats are permitted." }
-  ```
-
----
-
-## ⚙️ How to Run and Test the API Backend
-
-### 1. Installation & Setup
-Ensure you have the required backend dependency modules installed in your Python environment:
 ```bash
-pip install fastapi uvicorn python-multipart spacy pdfplumber opencv-contrib-python-headless
-python3 -m spacy download en_core_web_sm
+git clone https://github.com/HamzaButt22/capstone-backend.git
+cd capstone-backend
+pip install fastapi uvicorn python-multipart pdfplumber spacy opencv-python sqlalchemy streamlit requests
+python -m spacy download en_core_web_sm
 ```
 
-### 2. Boot Up the Local Server & Launch the Streamlit Frontend UI
-Launch your Uvicorn application server engine inside your root project folder:
+**Backend:**
 ```bash
 uvicorn main:app --reload
 ```
+Visit `http://127.0.0.1:8000/docs` for the interactive Swagger UI and to try both endpoints
+directly.
 
-Open a secondary terminal tab and run:
+**Frontend** (in a second terminal, backend must already be running):
 ```bash
 streamlit run app.py
 ```
 
-### 3. Accessing the Interactive API Documentation Dashboard
-FastAPI automatically generates an interactive schema portal to test your endpoints visually:
-- Open your browser and navigate to the dedicated testing path: **`http://127.0.0`**
-- This loads the **Swagger UI Dashboard**, exposing an explicit blueprint of all active endpoints.
-- **Testing Validation Routing:** Intentionally upload incorrect media attachments across endpoints to confirm the active exception-handling gates safely block execution and return clear `400 Bad Request` status blocks.
+A `transactions.db` SQLite file is created automatically on first run — no setup needed.
 
-### 4. Testing via Terminal Command Lines
-Open an independent secondary terminal window and execute direct `curl` data injections:
-- **Test Resume Upload:**
-  ```bash
-  curl -X POST "http://127.0.0" -F "file=@/path/to/your/resume.pdf"
-  ```
-- **Test Image Face Detection:**
-  ```bash
-  curl -X POST "http://127.0.0" -F "file=@/path/to/your/image.jpeg"
+<br>
+
+<div align="center"><img src="./assets/divider.svg" width="100%"/></div>
+
+## How it grew
+
+```mermaid
+flowchart LR
+    A["Week 6<br/>FastAPI + endpoints"] --> B["Week 6<br/>validation & errors"]
+    B --> C["Week 7<br/>SQLite persistence"]
+    C --> D["Week 7<br/>Streamlit dashboard"]
+    D --> E["Week 7<br/>integration testing"]
+```
+
+<br>
+
+## Code, day by day
+
+### Week 6 — Backend
+
+| Day | Snapshot | What changed |
+|---|---|---|
+| 1 | [view code](https://github.com/HamzaButt22/capstone-backend/blob/899cbac1a93e9242dc15d65e09d1aa226f9c9728/main.py) | FastAPI app, root route, local dev server |
+| 2 | [view code](https://github.com/HamzaButt22/capstone-backend/blob/87bb7dc7292daede660320345e7e8bf2d602fd13/main.py) | `/analyze-resume` endpoint, file upload handling |
+| 3 | [view code](https://github.com/HamzaButt22/capstone-backend/blob/f54987a74c6f50da414980273bbff5e52e3b194d/main.py) | `/analyze-image` endpoint |
+| 4 | [view code](https://github.com/HamzaButt22/capstone-backend/blob/85ec3060bae9ef15e9d8d45982ea7352200fd9f6/main.py) | file-type validation + `HTTPException` handling |
+| 5 | [view code](https://github.com/HamzaButt22/capstone-backend) | full curl test pass, API docs, backend finalized |
+
+### Week 7 — Persistence, frontend, integration
+
+| Day | Snapshot | What changed |
+|---|---|---|
+| 1 | [view code](https://github.com/HamzaButt22/capstone-backend/blob/d1372c274c4cb6d776efe0f3c3a0b7d4703c865e/main.py) | SQLite connection layer, `FileTransaction` table |
+| 2 | [view code](https://github.com/HamzaButt22/capstone-backend/blob/cf37ab9357322afd5dd50c1626418bab314739c5/main.py) | resume results logged to SQL via dependency injection |
+| 3 | [view code](https://github.com/HamzaButt22/capstone-backend/blob/5e3abc3ddc6d717fe5fe0a5db43f5e10447d63dd/main.py) | image results logged to SQL |
+| 4 | [view code](https://github.com/HamzaButt22/capstone-backend/blob/a3fb7237ca30860d61ad30dc3b4af5babd9da7ea/app.py) | Streamlit dashboard, both endpoints wired up |
+| 5 | [view code](https://github.com/HamzaButt22/capstone-backend) | end-to-end integration test, empty/oversized-file guards added |
+
+*Day 5 of Week 7 also carries a small fix made during review: the file-validation from Week 6
+Day 4 checked file **type** but not whether an upload was empty or oversized, which the original
+task actually called for. That guard is added in `main.py` now — see the decision log below.*
+
+<br>
+
+## The decision log
+
+<details>
+<summary><b>Week 6, Day 1 — A synchronous root route on an async app, on purpose</b></summary>
+<br>
+
+**Solving for:** a FastAPI app that actually runs, before anything else gets added to it.
+
+**Decision:**
+```python
+app = FastAPI()
+
+@app.get("/")
+async def root():
+    return {"message": "Hello World", "status": "FastAPI Server Running"}
+```
+
+`async def` on a route that does no I/O doesn't buy anything by itself — the payoff comes later,
+once the upload endpoints do real (awaitable) work like reading file bytes. Starting every route
+as `async` from day one just keeps the pattern consistent across the file instead of mixing sync
+and async handlers for no reason.
+
+</details>
+
+<details>
+<summary><b>Week 6, Day 2 — Buffering the upload to disk before analyzing it</b></summary>
+<br>
+
+**Solving for:** getting an uploaded PDF from an HTTP request into something `analyze_resume()`
+(which expects a file path) can read.
+
+**Decision:**
+```python
+temp_path = f"temp_{file.filename}"
+with open(temp_path, "wb") as buffer:
+    buffer.write(contents)
+```
+
+`analyze_resume()` was written in Week 5 against a file path, not a stream — rewriting it to take
+raw bytes wasn't worth it for a module that already worked, so the smaller change is at the API
+layer: buffer the upload to a temp file, run the existing function unchanged, then clean the temp
+file up. The `try/finally` around this (added Week 6 Day 4) is what guarantees that cleanup
+actually happens even if analysis raises an error partway through.
+
+</details>
+
+<details>
+<summary><b>Week 6, Day 3 — One endpoint per module, not one endpoint that branches</b></summary>
+<br>
+
+**Solving for:** exposing `analyze_image()` alongside the resume endpoint.
+
+**Decision:**
+```python
+@app.post("/analyze-image")
+async def web_analyze_image(file: UploadFile = File(...), db: Session = Depends(get_db)):
+    ...
+```
+
+A single `/analyze` endpoint that branches on file extension was the other real option. Two
+separate routes were chosen instead because the two modules return genuinely different response
+shapes (`predicted_category` + `extracted_skills` vs. `face_detected` + `count`) — a caller
+building against this API gets a clear, typed contract per route instead of one endpoint whose
+output schema depends on what you happened to upload.
+
+</details>
+
+<details>
+<summary><b>Week 6, Day 4 — Extension checks were only half the task</b></summary>
+<br>
+
+**Solving for:** the actual Week 6 Day 4 task — "error handling (invalid file types, **empty
+uploads, oversized files**) and input validation across both endpoints."
+
+**Original decision:**
+```python
+if not file.filename.lower().endswith('.pdf'):
+    raise HTTPException(status_code=400, detail="Invalid file type...")
+```
+
+**What was missing, found during review:** this only checked the file's *name*. A request with a
+`.pdf` filename but zero bytes, or a multi-hundred-megabyte file, would sail past this check and
+fail later — either silently (an empty PDF just produces no text) or expensively (a huge file
+gets fully buffered to disk before anything rejects it).
+
+**Fix applied:**
+```python
+contents = await file.read()
+if not contents:
+    raise HTTPException(status_code=400, detail="Uploaded file is empty.")
+if len(contents) > MAX_FILE_SIZE:
+    raise HTTPException(status_code=400, detail=f"File too large. Max size is {MAX_FILE_SIZE // (1024*1024)}MB.")
+```
+
+5MB was picked as the ceiling because both analyzers work on single documents/photos, not batches
+or high-res scans — generous enough for a normal resume or headshot, small enough to reject the
+kind of file that shouldn't be hitting these endpoints at all. This runs before the file is ever
+written to disk, so a bad upload never touches the filesystem in the first place.
+
+</details>
+
+<details>
+<summary><b>Week 7, Day 1 — SQLite over Postgres, and this wasn't in the original plan</b></summary>
+<br>
+
+**Solving for:** wanting a record of every analysis request, not just the response returned to the
+caller.
+
+**Worth flagging directly:** the 8-week syllabus for Week 7 was Streamlit basics → resume UI →
+image UI → integration testing → buffer day. It didn't call for a database layer at all. Adding
+one was extra scope taken on beyond the plan, not a syllabus requirement — worth being upfront
+about rather than presenting it as if it were always part of the assignment.
+
+**Decision:**
+```python
+SQLALCHEMY_DATABASE_URL = "sqlite:///./transactions.db"
+engine = create_engine(SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False})
+```
+
+SQLite over Postgres/MySQL because this runs locally with zero setup — `check_same_thread=False`
+is the one non-default needed to make SQLite (which is single-threaded by default) tolerate
+FastAPI's request handling. The tradeoff: this doesn't hold up under real concurrent writes, which
+is fine for a local capstone demo and would need revisiting for anything actually deployed with
+multiple users.
+
+</details>
+
+<details>
+<summary><b>Week 7, Day 2 — Logging results through a request-scoped session, not a global one</b></summary>
+<br>
+
+**Solving for:** writing each resume analysis result to the database without leaking connections
+across requests.
+
+**Decision:**
+```python
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+```
+
+FastAPI's `Depends(get_db)` pattern opens a fresh session per request and guarantees it closes
+afterward, even on error — a single module-level session shared across all requests was the
+simpler-looking alternative, but it would let one slow or failed request hold a connection open
+that every other request is implicitly waiting behind.
+
+</details>
+
+<details>
+<summary><b>Week 7, Day 3 — Same logging shape for images as for resumes</b></summary>
+<br>
+
+**Solving for:** keeping the image endpoint's database logging consistent with the resume
+endpoint's, rather than inventing a second pattern.
+
+**Decision:**
+```python
+db_transaction = models.FileTransaction(
+    filename=file.filename,
+    file_type="image",
+    status="Success",
+    result_summary=f"Face Detected: {face_detected} | Count: {face_count}",
+)
+```
+
+One `FileTransaction` table with a `file_type` column, instead of separate `resume_logs` and
+`image_logs` tables. A single table means one place to query "everything that happened," at the
+cost of `result_summary` being a loosely-structured string rather than real typed columns — fine
+for a capstone, but the first thing to revisit if this needed to support filtering or analytics
+over past results.
+
+</details>
+
+<details>
+<summary><b>Week 7, Day 4 — A Streamlit page that calls the API like any other client</b></summary>
+<br>
+
+**Solving for:** a working UI for both modules that doesn't reach into their internals.
+
+**Decision:**
+```python
+files = {"file": (resume_file.name, resume_file.getvalue(), "application/pdf")}
+response = requests.post("http://127.0.0.1:8000/analyze-resume", files=files)
+```
+
+`app.py` talks to `main.py` purely over HTTP, the same way any external client would — it never
+imports `analyze_resume` or `analyze_image` directly. That keeps frontend and backend genuinely
+decoupled: the backend could be swapped, redeployed, or written in a different language entirely
+without the frontend caring, since all it knows about is the API contract.
+
+</details>
+
+<details>
+<summary><b>Week 7, Day 5 — Integration testing surfaced the Day 4 gap, not a new bug</b></summary>
+<br>
+
+**Solving for:** confirming backend and frontend actually work together end-to-end, not just in
+isolation.
+
+**What testing found:** running both together with a range of inputs (a 0-byte file, an
+oversized image, a mistyped extension) is what surfaced that Week 6 Day 4's validation was
+incomplete — see that entry above. No new features were added on this day; the fix belongs to
+Day 4's task, it just wasn't caught until this integration pass exercised the edge cases the
+original test round hadn't.
+
+</details>
+
+<br>
+
+## What's next
+
+Weeks 6–7 of an 8-week AI/ML internship track, following
+[`student-management-system`](https://github.com/HamzaButt22/student-management-system) (Weeks
+1–2), [`eda-data-pipeline`](https://github.com/HamzaButt22/eda-data-pipeline) (Week 3),
+[`classical-ml-comparison`](https://github.com/HamzaButt22/classical-ml-comparison) (Week 4), and
+[`capstone-ai-modules`](https://github.com/HamzaButt22/capstone-ai-modules) (Week 5). Week 8 is
+deployment, final documentation, and sign-off — all five repos link back to the hub below once
+that's done.
+
+<br>
+
+<div align="center">
+
+**Part of the [AI/ML Internship Journey](https://github.com/HamzaButt22/ai-ml-internship-journey) — start there for the full story.**
+
+</div>

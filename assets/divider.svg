@@ -1,0 +1,18 @@
+<svg width="1000" height="28" viewBox="0 0 1000 28" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="dLineBack" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="15%" stop-color="#d9973f" stop-opacity="0.55"/>
+      <stop class="midStop" offset="50%"/>
+      <stop offset="85%" stop-color="#3fc9c0" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <style>
+      .midStop { stop-color: #ffffff; stop-opacity: 0.25; }
+      @media (prefers-color-scheme: light) {
+        .midStop { stop-color: #000000; stop-opacity: 0.18; }
+      }
+    </style>
+  </defs>
+  <rect x="0" y="13" width="1000" height="1.4" fill="url(#dLineBack)"/>
+</svg>

@@ -1,0 +1,52 @@
+<svg width="700" height="56" viewBox="0 0 700 56" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="chipFillBack" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop class="fillTop" offset="0%"/>
+      <stop class="fillBottom" offset="100%"/>
+    </linearGradient>
+    <linearGradient id="chipStrokeBack" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop class="strokeStart" offset="0%"/>
+      <stop class="strokeEnd" offset="100%"/>
+    </linearGradient>
+    <style>
+      .fillTop    { stop-color: #ffffff; stop-opacity: 0.10; }
+      .fillBottom { stop-color: #ffffff; stop-opacity: 0.03; }
+      .strokeStart{ stop-color: #ffffff; stop-opacity: 0.40; }
+      .strokeEnd  { stop-color: #ffffff; stop-opacity: 0.08; }
+      .chipText   { fill: #e8e2d8; }
+
+      @media (prefers-color-scheme: light) {
+        .fillTop    { stop-color: #000000; stop-opacity: 0.055; }
+        .fillBottom { stop-color: #000000; stop-opacity: 0.02; }
+        .strokeStart{ stop-color: #000000; stop-opacity: 0.28; }
+        .strokeEnd  { stop-color: #000000; stop-opacity: 0.08; }
+        .chipText   { fill: #2b2b2b; }
+      }
+    </style>
+  </defs>
+
+  <!-- chip: FastAPI -->
+  <rect x="8" y="10" width="106" height="36" rx="18" fill="url(#chipFillBack)" stroke="url(#chipStrokeBack)" stroke-width="1"/>
+  <circle cx="30" cy="28" r="4" fill="#3fc9c0"/>
+  <text class="chipText" x="44" y="32" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14">FastAPI</text>
+
+  <!-- chip: Uvicorn -->
+  <rect x="126" y="10" width="110" height="36" rx="18" fill="url(#chipFillBack)" stroke="url(#chipStrokeBack)" stroke-width="1"/>
+  <circle cx="148" cy="28" r="4" fill="#d9973f"/>
+  <text class="chipText" x="162" y="32" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14">Uvicorn</text>
+
+  <!-- chip: SQLAlchemy -->
+  <rect x="248" y="10" width="150" height="36" rx="18" fill="url(#chipFillBack)" stroke="url(#chipStrokeBack)" stroke-width="1"/>
+  <circle cx="270" cy="28" r="4" fill="#8f5fe0"/>
+  <text class="chipText" x="284" y="32" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14">SQLAlchemy</text>
+
+  <!-- chip: Streamlit -->
+  <rect x="410" y="10" width="118" height="36" rx="18" fill="url(#chipFillBack)" stroke="url(#chipStrokeBack)" stroke-width="1"/>
+  <circle cx="432" cy="28" r="4" fill="#4fb3d9"/>
+  <text class="chipText" x="446" y="32" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14">Streamlit</text>
+
+  <!-- chip: SQLite -->
+  <rect x="540" y="10" width="102" height="36" rx="18" fill="url(#chipFillBack)" stroke="url(#chipStrokeBack)" stroke-width="1"/>
+  <circle cx="562" cy="28" r="4" fill="#c9c0b3"/>
+  <text class="chipText" x="576" y="32" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14">SQLite</text>
+</svg>
