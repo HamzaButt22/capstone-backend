@@ -317,6 +317,6 @@ that's done.
 
 <div align="center">
 
-**Part of the [AI/ML Internship Journey](https://github.com/HamzaButt22/ai-ml-internship) — start there for the full story.**
+**Part of the [AI/ML Internship](https://github.com/HamzaButt22/ai-ml-internship) — start there for the full story.**
 
 </div>
